@@ -1,5 +1,5 @@
 
-var baseUrl = "https://swaroop-url-shortner.herokuapp.com/";
+var baseUrl = "https://swaroop-url-shortner.herokuapp.com";
 var sessiondata = localStorage.getItem("JWToken");
 var token = sessiondata.split("Email")[0];
 var email = sessiondata.split("Email")[1];

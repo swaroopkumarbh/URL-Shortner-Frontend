@@ -1,4 +1,4 @@
-var baseUrl = "https://swaroop-url-shortner.herokuapp.com/";
+var baseUrl = "https://swaroop-url-shortner.herokuapp.com";
 var alert1 = document.querySelector(".alert1");
 var alert2 = document.querySelector(".alert2");
 var alert3 = document.querySelector(".alert3");
