@@ -1,7 +1,8 @@
-var baseUrl = "https://swaroop-url-shortner.herokuapp.com";
+var baseUrl = "http://localhost:3000";
 var tbody = document.getElementById("tbody");
 var h3 = document.querySelector(".displaynone");
 var email = localStorage.getItem("Email");
+var token = localStorage.getItem("Token");
 var p = document.getElementById("p");
 p.innerHTML = `Current User: ${email}`;
 document.getElementById("btn-shrink").addEventListener("click", () => {
@@ -26,6 +27,7 @@ async function fetchUrls() {
             body: JSON.stringify(payLoad),
             headers: {
                 "Content-Type": "application/json",
+                "Authorization": token
             },
         }
     );
@@ -72,6 +74,7 @@ async function populate() {
                 body: JSON.stringify(data1),
                 headers: {
                     "Content-Type": "application/json",
+                    "Authorization": token
                 },
             }
         );
@@ -98,6 +101,7 @@ async function fetchOriginalUrls() {
             body: JSON.stringify(payLoad),
             headers: {
                 "Content-Type": "application/json",
+                "Authorization": token
             },
         }
     );
@@ -142,6 +146,7 @@ async function updateClickCount(originalUrl) {
                 body: JSON.stringify(payLoad),
                 headers: {
                     "Content-Type": "application/json",
+                    "Authorization": token
                 },
             }
         );

@@ -1,5 +1,5 @@
 var btn = document.getElementById("login-button");
-var baseUrl = "https://swaroop-url-shortner.herokuapp.com";
+var baseUrl = "http://localhost:3000";
 
 btn.addEventListener("click", () => login());
 
@@ -20,6 +20,7 @@ async function login() {
     var data = await response.json();
     if (data.message == "success") {
         localStorage.setItem("Email", data.email);
+        localStorage.setItem("Token", data.token);
         location.href = "dashboard.html";
     } else {
         alert(data.message);

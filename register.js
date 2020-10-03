@@ -1,4 +1,4 @@
-var baseUrl = "https://swaroop-url-shortner.herokuapp.com";
+var baseUrl = "http://localhost:3000";
 var alert1 = document.querySelector(".alert1");
 var alert2 = document.querySelector(".alert2");
 var alert3 = document.querySelector(".alert3");
@@ -47,6 +47,6 @@ async function registerUser() {
     if (data.message != "Email id exists") {
         alert3.classList.remove("displaynone");
         localStorage.setItem("JWToken", `${token}Email${email.value}`);
-        location.href = "auth.html";
+        //location.href = "auth.html";
     }
 }
