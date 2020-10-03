@@ -1,5 +1,5 @@
 var btn = document.getElementById("login-button");
-var baseUrl = "https://swaroop-url-shortner.herokuapp.com";
+var baseUrl = "http://localhost:3000";
 
 btn.addEventListener("click", () => login());
 
