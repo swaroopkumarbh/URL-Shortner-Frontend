@@ -1,4 +1,4 @@
-var baseUrl = "https://swaroop-url-shortner.herokuapp.com/";
+var baseUrl = "https://swaroop-url-shortner.herokuapp.com";
 var tbody = document.getElementById("tbody");
 var h3 = document.querySelector(".displaynone");
 var email = localStorage.getItem("Email");
