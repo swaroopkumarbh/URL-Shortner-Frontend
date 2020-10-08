@@ -27,7 +27,7 @@ async function fetchUrls() {
             body: JSON.stringify(payLoad),
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": token
+                "authorization": token
             },
         }
     );
@@ -74,7 +74,7 @@ async function populate() {
                 body: JSON.stringify(data1),
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": token
+                    "authorization": token
                 },
             }
         );
@@ -101,7 +101,7 @@ async function fetchOriginalUrls() {
             body: JSON.stringify(payLoad),
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": token
+                "authorization": token
             },
         }
     );
@@ -146,7 +146,7 @@ async function updateClickCount(originalUrl) {
                 body: JSON.stringify(payLoad),
                 headers: {
                     "Content-Type": "application/json",
-                    "Authorization": token
+                    "authorization": token
                 },
             }
         );
