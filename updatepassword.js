@@ -42,6 +42,7 @@ async function updatePassword() {
     var data = await req.json();
     if (data.message == "Password updated") {
         alert3.classList.remove("displaynone");
+        location.href = "login.html";
     } else {
         alert(data.message);
     }
